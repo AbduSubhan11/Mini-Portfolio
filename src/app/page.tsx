@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-      <section className="md:flex items-center justify-between md:space-y-0 space-y-28 px-5 lg:px-16 py-20 md:py-32 bg-[#ebfeff]">
+      <section className="md:flex items-center justify-between space-y-40 md:space-y-0 px-5 lg:px-16 py-20 md:py-32 bg-[#ebfeff]">
         {/* LEFT */}
-        <div className="space-y-5">
+        <div className="space-y-5 md:w-[651px]">
           <p className="text-[#457B9D] text-2xl ">Hi Everyone, I am</p>
           <h1 className="font-bold text-5xl ">Abdu Subhan</h1>
           <p className="text-xl leading-6">
@@ -37,15 +37,14 @@ export default function Home() {
         </div>
 
         {/* RIGHT */}
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center ">
           <Image
             src={"/Image/Rectangle.png"}
             alt="Hero Image Shadow"
-            width={800}
+            width={480}
             height={100}
-            className="h-auto "
           />
-          <img src="https://img.freepik.com/premium-photo/bright-closeup-portrait-picture-happy-businessman_380164-21621.jpg?w=740" className="absolute top-0 w-[60%] "/>
+          <Image src="/Image/hero.png" alt="Hero Image" width={400} height={100} className="absolute bottom-0 "/>
         </div>
       </section>
   );
